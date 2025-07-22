@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join President Yoweri Kaguta Museveni in his vision for a prosperous, peaceful, and united Uganda as we work towards the 2026 general elections.">
+    <meta name="keywords" content="Museveni, 2026, Uganda, Campaign, Vision, PDM, NRM">
+    <meta name="author" content="Museveni 2026 Campaign Team">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="C:\Users\LENOVO\OneDrive\Desktop\poster-ykm-Copy.jpg" style="border-radius: 50%;">
+    <title>President Museveni - 2026 Re-election Campaign</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Global Styles */
+        :root {
+            --primary: #FCDC04; /* Yellow */
+            --secondary: #000000; /* Black */
+            --accent: #D90000; /* Red */
+            --light: #FFFFFF; /* White */
+            --dark: #333333;
+            --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: var(--dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--light);
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: var(--primary);
+            color: var(--secondary);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 2.5rem;
+            color: var(--accent);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--primary);
+        }
+
+        /* Header & Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(0, 0, 0, 0.9);
+            transition: all 0.3s ease;
+        }
+
+        header.scrolled {
+            background: rgba(0, 0, 0, 0.95);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .logo-text {
+            color: var(--light);
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .logo-text span {
+            color: var(--primary);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+        }
+
+        .nav-links a {
+            color: var(--light);
+            font-weight: 600;
+            position: relative;
+            padding: 5px 0;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://via.placeholder.com/1920x1080?text=Museveni+2026') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: var(--light);
+            padding-top: 80px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero h1 span {
+            color: var(--primary);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .hero-btns {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .hero-btns .btn {
+            font-size: 1.1rem;
+            padding: 12px 30px;
+        }
+
+        .hero-btns .btn-outline {
+            background: transparent;
+            border: 2px solid var(--light);
+        }
+
+        .hero-btns .btn-outline:hover {
+            background: var(--light);
+            color: var(--secondary);
+        }
+
+        /* About Section */
+        .about {
+            background: var(--light);
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .about-img {
+            flex: 1;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .about-img img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .about-img:hover img {
+            transform: scale(1.05);
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-text h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            color: var(--accent);
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+        }
+
+        .about-stats {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-item .number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .stat-item .label {
+            font-size: 1rem;
+            color: var(--dark);
+        }
+
+        /* Vision Section */
+        .vision {
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://via.placeholder.com/1920x1080?text=Uganda+Vision') center/cover no-repeat;
+            color: var(--light);
+            text-align: center;
+        }
+        .vision-intro {
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+
+        .vision .section-title {
+            color: var(--primary);
+        }
+
+        .vision-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .vision-item {
+            background: rgba(255, 255, 255, 0.1);
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .vision-item:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .vision-item i {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .vision-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        /* PDM Section */
+        .pdm {
+            background: var(--light);
+        }
+
+        .pdm-content {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .pdm-text {
+            flex: 1;
+        }
+
+        .pdm-text h2 {
+            font-size: 2.2rem;
+            color: var(--accent);
+            margin-bottom: 20px;
+        }
+
+        .pdm-text p {
+            margin-bottom: 20px;
+        }
+
+        .pdm-highlights {
+            margin-top: 30px;
+        }
+
+        .highlight-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .highlight-item i {
+            color: var(--primary);
+            font-size: 1.2rem;
+            margin-right: 15px;
+            margin-top: 5px;
+        }
+
+        .pdm-gallery {
+            flex: 1;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .pdm-gallery img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            box-shadow: var(--shadow);
+        }
+
+        .pdm-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .pdm-links {
+            margin-top: 30px;
+        }
+
+        .pdm-links a {
+            color: var(--accent);
+            font-weight: 600;
+            margin-right: 15px;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .pdm-links a i {
+            margin-left: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .pdm-links a:hover i {
+            transform: translateX(5px);
+        }
+
+        /* Campaign Updates */
+        .updates .section-title {
+            color: var(--accent);
+        }
+
+        .updates-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .update-card {
+            background: var(--light);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease;
+        }
+
+        .update-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .update-img {
+            height: 250px;
+            overflow: hidden;
+        }
+
+        .update-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .update-card:hover .update-img img {
+            transform: scale(1.1);
+        }
+
+        .update-content {
+            padding: 20px;
+        }
+
+        .update-date {
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .update-title {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        .update-excerpt {
+            margin-bottom: 15px;
+            color: #666;
+        }
+
+        .read-more {
+            color: var(--accent);
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .read-more i {
+            margin-left: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .read-more:hover i {
+            transform: translateX(5px);
+        }
+
+        /* Get Involved */
+        .involved {
+            background: var(--light);
+        }
+
+        .involved .section-title {
+            color: var(--accent);
+        }
+
+        .involved-content {
+            display: flex;
+            gap: 50px;
+        }
+
+        .involved-form {
+            flex: 1;
+            background: #f1f1f1;
+            padding: 40px;
+            border-radius: 10px;
+        }
+
+        .involved-form h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--accent);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        .involved-info {
+            flex: 1;
+        }
+
+        .involved-info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--accent);
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 25px;
+        }
+
+        .info-item i {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-right: 15px;
+            margin-top: 5px;
+        }
+
+        .info-text h4 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--secondary);
+            color: var(--light);
+            padding: 60px 0 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h3 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+
+        .footer-col p {
+            margin-bottom: 15px;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: var(--primary);
+            color: var(--secondary);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .footer-bottom p {
+            color: var(--light);
+        }
+
+        
+
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--accent);
+            color: var(--light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 999;
+        }
+
+        .back-to-top.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background: var(--primary);
+            color: var(--secondary);
+        }
+
+        /* Modal for Vision Details */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 2000;
+            overflow-y: auto;
+            padding: 20px;
+        }
+
+        .modal-content {
+            background: var(--light);
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 40px;
+            border-radius: 10px;
+            position: relative;
+            animation: modalFadeIn 0.3s ease;
+        }
+
+        @keyframes modalFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--accent);
+        }
+
+        .modal-title {
+            font-size: 2rem;
+            color: var(--accent);
+            margin-bottom: 20px;
+        }
+
+        .modal-img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .about-content,
+            .involved-content,
+            .pdm-content {
+                flex-direction: column;
+            }
+
+            .about-img,
+            .about-text,
+            .involved-form,
+            .involved-info,
+            .pdm-text,
+            .pdm-gallery {
+                flex: none;
+                width: 100%;
+            }
+
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+
+            .modal-content {
+                padding: 30px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 80px);
+                background: rgba(0, 0, 0, 0.95);
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.5s ease;
+            }
+
+            .nav-links.active {
+                left: 0;
+            }
+
+            .nav-links li {
+                margin: 15px 0;
+            }
+
+            .hamburger {
+                display: block;
+                color: var(--light);
+                font-size: 1.5rem;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .hero-btns {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .modal-img {
+                height: 250px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .about-stats {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .stat-item {
+                margin-bottom: 15px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .pdm-gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .modal-content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <a href="https://images.seeklogo.com/logo-png/54/1/national-resistance-movement-nrm-logo-png_seeklogo-547757.png" class="logo">
+                    <img src="https://images.seeklogo.com/logo-png/54/1/national-resistance-movement-nrm-logo-png_seeklogo-547757.png" alt="NRM Logo">
+                    <span class="logo-text">Museveni <span>2026</span></span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#vision">Vision</a></li>
+                    <li><a href="#pdm">PDM</a></li>
+                    <li><a href="#updates">Updates</a></li>
+                    <li><a href="#involved">Get Involved</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Securing Uganda's Future <span>2026 and Beyond</span></h1>
+                <p>Join President Yoweri Kaguta Museveni in his vision for a prosperous, peaceful, and united Uganda as we work towards the 2026 general elections.</p>
+                <div class="hero-btns">
+                    <a href="#involved" class="btn">Join the Campaign</a>
+                    <a href="#vision" class="btn btn-outline">Our Vision</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About President Museveni</h2>
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="https://yowerikmuseveni.com/sites/default/files/poster-ykm-Copy.jpg" alt="President Yoweri Museveni smiling and raising his right hand in a gesture of greeting, wearing a yellow shirt and wide-brimmed hat, standing in front of a crowd with campaign banners in the background, conveying a positive and hopeful atmosphere. If visible, text on the banner reads Museveni 2026 Securing Uganda's Future">
+                </div>
+                <div class="about-text">
+                    <h2>The People's President</h2>
+                    <p>Yoweri Kaguta Museveni has been the President of Uganda since 1986, leading the country through significant transformation and development. Born in 1944 in Ntungamo, he played a crucial role in the liberation struggle that ousted dictatorships and brought peace to Uganda.</p>
+                    <p>Under his leadership, Uganda has seen remarkable progress in infrastructure, education, healthcare, and economic growth. His vision for the 2026-2031 term focuses on job creation, industrialization, and continued peace and stability.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="number">38+</div>
+                            <div class="label">Years in Leadership</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="number">5</div>
+                            <div class="label">Elections Won</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="number">100+</div>
+                            <div class="label">Development Projects</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+            <p class="vision-intro">President Museveni's 2026-2031 manifesto focuses on key areas that will propel Uganda to middle-income status and ensure prosperity for all citizens.</p>
+    <section class="vision" id="vision">
+        <div class="container">
+            <h2 class="section-title">Our Vision for Uganda</h2>
+            <p class="vision-intro">President Museveni's 2026-2031 manifesto focuses on key areas that will propel Uganda to middle-income status and ensure prosperity for all citizens.</p>
+            <div class="vision-items">
+                <div class="vision-item" onclick="openModal('Economic Growth', 'Our economic plan focuses on creating 5 million new jobs through industrialization, agro-processing, and supporting SMEs. Key projects include:<ul><li>Expanding industrial parks in Mbale, Jinja, and Kasese</li><li>Increasing agricultural value addition through cooperatives</li><li>Boosting tourism and ICT sectors</li></ul>', 'https://nrm.ug/blog/president-museveni-calls-enhanced-competition-production-drive-economic-growth')">
+                    <i class="fas fa-chart-line"></i>
+                    <h3><a href="https://nrm.ug/blog/president-museveni-calls-enhanced-competition-production-drive-economic-growth" target="_blank" rel="noopener">Economic Growth</a></h3>
+                    <p>Creating jobs through industrialization, agro-processing, and supporting small businesses.</p>
+                </div>
+                <div class="vision-item" onclick="openModal('Security & Stability', 'Uganda will continue to be a beacon of peace in East Africa. Our security strategy includes:<ul><li>Modernizing the UPDF and police forces</li><li>Counter-terrorism operations against ADF</li><li>Regional cooperation with EAC partners</li></ul>', 'https://nrm.ug/blog/nrm-vanguard-peace-security-and-stability-uganda')">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3><a href="https://nrm.ug/blog/nrm-vanguard-peace-security-and-stability-uganda" target="_blank" rel="noopener">Security & Stability</a></h3>
+                    <p>Continued efforts to maintain peace, fight terrorism, and ensure safety.</p>
+                </div>
+                <div class="vision-item" onclick="openModal('Healthcare & Education', 'We will achieve universal healthcare coverage by:<ul><li>Building 100 new HC IIIs and IVs</li><li>Increasing medical staff by 30%</li><li>Providing free sanitary pads to schoolgirls</li><li>Constructing 10 new technical institutes</li></ul>', 'https://www.yowerikmuseveni.com/delivering-education-health')">
+                    <i class="fas fa-hospital"></i>
+                    <h3><a href="https://www.yowerikmuseveni.com/delivering-education-health" target="_blank" rel="noopener">Healthcare & Education</a></h3>
+                    <p>Expanding universal healthcare access and improving education quality.</p>
+                </div>
+                <div class="vision-item" onclick="openModal('Infrastructure Development', 'Key infrastructure projects for 2026-2031:<ul><li>Completion of Standard Gauge Railway</li><li>100% district electricity coverage</li><li>500km of new tarmac roads annually</li><li>Expansion of Entebbe Airport</li></ul>', 'https://nrm.ug/healthcare/infrastructure-development')">
+                    <i class="fas fa-road"></i>
+                    <h3><a href="https://nrm.ug/healthcare/infrastructure-development" target="_blank" rel="noopener">Infrastructure</a></h3>
+                    <p>Roads, electricity, and digital transformation for a modern Uganda.</p>
+                </div>
+                <div class="vision-item" onclick="openModal('Youth & Women Empowerment', 'Empowerment programs include:<ul><li>UGX 1 trillion Youth Fund</li><li>Skilling 500,000 youth annually</li><li>Women enterprise funds at 5% interest</li><li>30% procurement reservation for youth/women</li></ul>', 'https://www.nrm.ug/news/youth-women-empowerment-top-nambi-agenda-kawempe-north')">
+                    <i class="fas fa-users"></i>
+                    <h3><a href="https://www.nrm.ug/news/youth-women-empowerment-top-nambi-agenda-kawempe-north" target="_blank" rel="noopener">Youth & Women</a></h3>
+                    <p>Skilling programs, entrepreneurship funds, and job creation.</p>
+                </div>
+                <div class="vision-item" onclick="openModal('Agriculture Modernization', 'Transforming agriculture through:<ul><li>Mechanization (10,000 tractors by 2027)</li><li>Irrigation schemes in dry regions</li><li>Cooperatives for better market access</li><li>PDM funding to all parishes</li></ul>', 'https://nrm.ug/news/namayanja-launches-model-farm-boost-agriculture-and-wealth-creation-nakaseke')">
+                    <i class="fas fa-hand-holding-water"></i>
+                    <h3><a href="https://nrm.ug/news/namayanja-launches-model-farm-boost-agriculture-and-wealth-creation-nakaseke" target="_blank" rel="noopener">Agriculture</a></h3>
+                    <p>Modernizing farming to increase productivity and incomes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PDM Section -->
+    <section class="pdm" id="pdm">
+        <div class="container">
+            <h2 class="section-title">Parish Development Model (PDM)</h2>
+            <div class="pdm-content">
+                <div class="pdm-text">
+                    <h2>Transforming Uganda from the Parish Level</h2>
+                    <p>The Parish Development Model (PDM) is President Museveni's flagship program to eradicate poverty by delivering services and funding directly to Uganda's 10,594 parishes.</p>
+                    <p>PDM focuses on 7 pillars: Economic Infrastructure, Financial Inclusion, Social Services, Community Mobilization, Governance & Administration, Production & Marketing, and Data Management.</p>
+                    
+                    <div class="pdm-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div class="highlight-text">
+                                <h4>UGX 100M per Parish</h4>
+                                <p>Direct funding to parish SACCOs for income-generating activities</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div class="highlight-text">
+                                <h4>1.2M Households Reached</h4>
+                                <p>Benefiting over 5 million Ugandans in the first year</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div class="highlight-text">
+                                <h4>President's District Tours</h4>
+                                <p>Museveni has personally launched PDM in 50+ districts since 2022</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pdm-links">
+                        <a href="https://presidentialinitiatives.go.ug/parish-development-model/" target="_blank" rel="noopener">Official PDM Portal <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://www.gou.go.ug/pdm-guidelines" target="_blank" rel="noopener">PDM Guidelines <i class="fas fa-download"></i></a>
+                    </div>
+                </div>
+                <div class="pdm-gallery">
+                    <img src="https://nrm.ug/sites/default/files/styles/og/public/news-images/Sevo%20PDM.jpeg?itok=9Oqwlq36" alt="PDM Launch">
+                    <img src="https://ubc.go.ug/wp-content/uploads/2025/01/H.E-WITH-HON.REBECCA-KADAGA-LEFT-MRS-BUWALA-TOLOFISA-RIGHT-WITH-OTHER-OFFICIALS-DURING-A-PHOTO-SECTION-1024x510.jpg" alt="PDM Beneficiaries">
+                    <img src="https://pbs.twimg.com/media/GmTluwIWsAAEeMs.jpg" alt="PDM SACCO">
+                    <img src="https://pbs.twimg.com/media/GkpyIORWgAEFxqT.jpg" alt="PDM Agriculture">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Campaign Updates -->
+    <section class="updates" id="updates">
+        <div class="container">
+            <h2 class="section-title">Campaign Updates</h2>
+            <div class="updates-container">
+                <div class="update-card">
+                    <div class="update-img">
+                        <img src="https://www.mediacentre.go.ug/uploads/Addressing%20a%20public%20rally%20at%20Mandela%20National%20Stadium%20-%20Wakiso%20District%2001%20.jpg" alt="Campaign Rally">
+                    </div>
+                    <div class="update-content">
+                        <div class="update-date">June 15, 2025</div>
+                        <h3 class="update-title">Massive Turnout at Kampala Rally</h3>
+                        <p class="update-excerpt">Thousands of supporters gathered at Kololo Ceremonial Grounds to hear President Museveni outline his 2026 vision...</p>
+                        <a href="https://www.mediacentre.go.ug/single-article.php?id=308" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="update-card">
+                    <div class="update-img">
+                        <img src="https://www.mediacentre.go.ug/uploads/J00_2434.JPG" alt="PDM Tour">
+                    </div>
+                    <div class="update-content">
+                        <div class="update-date">May 28, 2025</div>
+                        <h3 class="update-title">President Launches PDM in Lango Sub-region</h3>
+                        <p class="update-excerpt">Museveni disbursed UGX 3.2 billion to 32 SACCOs in Lira, Otuke, and Alebtong districts...</p>
+                        <a href="https://statehouse.go.ug/use-prevailing-peace-to-create-wealth-president-museveni-rallies-people-of-lango/" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="update-card">
+                    <div class="update-img">
+                        <img src="https://statehouse.go.ug/wp-content/uploads/2025/05/Hon-Balaam-Barugahara-Represents-President-Museveni-At-The-Youth-Platform-Africa-Annual-General-Meeting-and-Expo-at-Kololo-Independence-Grounds-08-May-2025-1-1024x812.jpg" alt="Youth Meeting">
+                    </div>
+                    <div class="update-content">
+                        <div class="update-date">April 10, 2025</div>
+                        <h3 class="update-title">Youth Skilling Initiative Launched</h3>
+                        <p class="update-excerpt">10,000 youth to benefit from vocational training in welding, carpentry, and tailoring...</p>
+                        <a href="https://statehouse.go.ug/president-museveni-to-introduce-new-skilling-courses-at-the-presidential-industrial-hubs/" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get Involved Section -->
+    <section class="involved" id="involved">
+        <div class="container">
+            <h2 class="section-title">Get Involved</h2>
+            <div class="involved-content">
+                <div class="involved-form">
+                    <h3>Join the Movement</h3>
+                    <form id="volunteerForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="district">District</label>
+                            <select id="district" name="district" required>
+                                <option value="">Select District</option>
+                                <option value="Kampala">Kampala</option>
+                                <option value="Wakiso">Wakiso</option>
+                                <option value="Mbarara">Mbarara</option>
+                                <option value="Gulu">Gulu</option>
+                                <option value="Mbale">Mbale</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="interest">How would you like to help?</label>
+                            <select id="interest" name="interest" required>
+                                <option value="">Select Option</option>
+                                <option value="volunteer">Volunteer</option>
+                                <option value="donate">Donate</option>
+                                <option value="both">Both</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message (Optional)</label>
+                            <textarea id="message" name="message"></textarea>
+                        </div>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+                <div class="involved-info">
+                    <h3>Contact Information</h3>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="info-text">
+                            <h4>Campaign Headquarters</h4>
+                            <p>Plot 10, Kyadondo Road, Nakasero, Kampala</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="info-text">
+                            <h4>Phone</h4>
+                            <p>+256 700 123456</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-globe"></i>
+                        <div class="info-text">
+                            <h4>Website</h4>
+                            <p>www.museveni2026.ug</p>
+                            <p>www.nrm.ug</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="info-text">
+                            <h4>Email</h4>
+                            <p>info@museveni2026.ug</p>
+                        </div>
+                    </div>
+                    <div class="container">
+            <p>&copy; 2025 Parish Development Model | President Yoweri Museveni</p>
+        </div>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <script
+        src="https://kit.fontawesome.com/a076d05399.js"
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.0/gsap.min.js"></script>
+        <script>
+            // GSAP animations can be added here
+        </script>   
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.0/gsap.min.js"></script>
+</html>
+                       
